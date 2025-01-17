@@ -17,15 +17,28 @@ const Academics = () => {
             <li className="mb-10 ms-4">
               <div className="absolute w-3 h-3 bg-red-800 rounded-full mt-1.5 -start-1.5 border border-white"></div>
               <time className="mb-1 text-sm font-semibold leading-none text-gray-400">
-                2021 to Present
+                2024 to Present
               </time>
               <h3 className="text-lg font-semibold text-customBlack">
-                Bachelor of Computer Science - Federal University of ABC
+              Bachelor's Degree in Computer Science - Federal University of ABC
                 (UFABC), São Paulo, Brazil
               </h3>
               <p className="mb-4 text-base font-normal text-gray-500">
-                Science and Technology, Software development, Data Structures
+                Software development, Data Structures
                 and Algorithms, Operating Systems.
+              </p>
+            </li>
+            <li className="mb-10 ms-4">
+              <div className="absolute w-3 h-3 bg-red-800 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+              <time className="mb-1 text-sm font-semibold leading-none text-gray-400">
+                2021 to Present
+              </time>
+              <h3 className="text-lg font-semibold text-customBlack">
+              Bachelor's Degree in Science and Technology (BC&T) - Federal University of ABC
+                (UFABC), São Paulo, Brazil
+              </h3>
+              <p className="mb-4 text-base font-normal text-gray-500">
+                Science and Technology, Mathematics, Chemistry, Physics, Quantum physics.
               </p>
             </li>
             <li className="mb-10 ms-4">
