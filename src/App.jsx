@@ -15,10 +15,9 @@ const App = () => {
     selection:text-red-800"
     >
       <div className="fixed top-0 -z-10 h-full w-full">
+        {/* <div className="absolute top-0 z-[-2] h-screen w-screen bg-[linear-gradient(-20deg,#e9defa_0%,#fbfcdb_100%)]"></div>  */}
 
-         <div className="absolute top-0 z-[-2] h-screen w-screen bg-[linear-gradient(-20deg,#e9defa_0%,#fbfcdb_100%)]"></div> 
-
-         {/* <div className="absolute top-0 z-[-2] h-screen w-screen bg-[linear-gradient(to_top,#f3e7e9_0%,#e3eeff_99%,#e3eeff_100%)]"></div>  */}
+        <div className="absolute top-0 z-[-2] h-screen w-screen bg-[linear-gradient(to_top,#f3e7e9_0%,#e3eeff_99%,#e3eeff_100%)]"></div>
       </div>
 
       <div className="scontainer mx-auto px-8 md:px-16 lg:px-24">
