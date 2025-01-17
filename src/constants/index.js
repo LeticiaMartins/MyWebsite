@@ -1,15 +1,11 @@
 import project1 from "../assets/projects/data.jpg";
 import project2 from "../assets/projects/player.jpg";
 
-export const HERO_CONTENT = `With over 4 years of experience in TypeScript, HTML, and CSS. Proven ability to develop responsive user interfaces, implement efficient web solutions, and maintain high-performance web applications. Expertise in using frameworks such as Angular to build scalable, client-focused websites. Adept at collaborating with cross-functional teams, resolving bugs, and optimizing UI/UX. Skilled in maintaining code quality and delivering projects on time, while continuously learning new technologies to enhance functionality and user experience.`;
+export const HERO_CONTENT = `With over 4 years of experience in TypeScript, HTML, and CSS, I specialize in creating responsive and user-friendly web interfaces. I enjoy building scalable, client-focused websites using frameworks like Angular, always striving to deliver efficient and high-performing solutions. I thrive in collaborative environments, where solving bugs, optimizing UI/UX, and ensuring code quality are part of the daily workflow. Passionate about learning, I’m always exploring new technologies to enhance functionality and deliver the best possible experience for users.`;
 
-export const ABOUT_TEXT = `My journey in technology began with 2 exchanges that developed my programming, teamwork, and creativity skills. After these experiences, I worked as a Junior Front-End Developer, where I was responsible for daily maintenance, layout, and implementation of the Vtex platform on e-commerce sites, serving clients such as Stance and other retailers.
+export const ABOUT_TEXT = `My journey in technology has been shaped by a variety of experiences that allowed me to learn and grow. It began with two exchange programs, where I had the chance to develop my programming, teamwork, and creativity skills while gaining new perspectives.
 
-Subsequently, I interned in IT Development at Banco ABC Brasil, where I contributed to the development of internal systems by resolving bugs and handling requests for existing systems. This experience gave me practical insight into the software development lifecycle and allowed me to contribute by developing user interfaces with Angular, implementing business logic via APIs using .NET and C#, and creating database procedures with SQL Server.
-
-Currently, I am a student of Science and Technology and Computer Science at the Federal University of ABC, where I continue to enhance my knowledge in new languages and tools.
-
-I have been involved in managing the student representation of the Green Team Hacker Club, an ethical hacking group formed by UFABC students, where I developed interpersonal skills and held roles such as Vice-President and President.
+Currently, I'm a student of Science and Technology and Computer Science at the Federal University of ABC, where I'm continually learning new tools, languages, and concepts. Alongside my studies, I've been part of the Green Team Hacker Club, an ethical hacking group at UFABC. Serving in roles like Vice-President and President taught me the value of collaboration and leadership in a team environment.
 
 My goal is to combine my practical experience with a solid academic background to tackle complex challenges in the technology field. I am constantly seeking opportunities to grow professionally and apply my knowledge to innovative projects.`;
 

@@ -16,7 +16,7 @@ const About = () => {
           className="w-full lg:w-1/2 lg:p-8"
         >
           <div className="flex items-center justify-center">
-            <img className="rounded-2xl" src={aboutImg} alt="about" />
+            <img className="rounded-2xl w-3/4 md:w-3/4 lg:w-2/3" src={aboutImg} alt="about" />
           </div>
         </motion.div>
         <motion.div 
@@ -25,7 +25,7 @@ const About = () => {
         transition={{ duration: 0.5 }}
         className="w-full lg:w-1/2">
           <div className="flex justify-center lg:justify-start">
-            <p className="font-body text-slate-700 text-lg my-2 max-w-xl py-6">
+            <p className="font-body text-slate-700 text-lg my-2 max-w-xl py-6 whitespace-pre-line">
               {ABOUT_TEXT}
             </p>
           </div>

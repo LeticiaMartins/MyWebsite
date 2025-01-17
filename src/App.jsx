@@ -21,7 +21,7 @@ const App = () => {
         <div className="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[linear-gradient(135deg,#fdfcfb_0%,#e2d1c3_100%)]"></div>
       </div>
 
-      <div className="container mx-auto px-24">
+      <div className="scontainer mx-auto px-8 md:px-16 lg:px-24">
         <Navbar />
         <Hero />
         <About />

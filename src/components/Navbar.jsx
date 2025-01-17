@@ -2,12 +2,13 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
 import { PiCertificateFill } from "react-icons/pi";
+import GTHCImg from "../assets/menu_logo.png";
 
 const Navbar = () => {
   return (
     <nav className="mb-20 flex items-center justify-between py-6">
       <div className="flex flex-shrink-0 items-center"></div>
-      <div className="m-8 flex items-center justify-center gap-4 text-3xl">
+      <div className="mt-8 mb-8 flex items-center justify-start gap-4 text-3xl">
         <a
           href="https://www.linkedin.com/in/leticiamartinsbandeira/"
           target="_blank"
@@ -43,6 +44,19 @@ const Navbar = () => {
           className="transition-transform duration-300 transform hover:scale-110"
         >
           <PiCertificateFill className="text-customBlack hover:text-red-800" />
+        </a>
+        <a
+          href="https://greenteamufabc.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          className="transition-transform duration-300 transform hover:scale-110"
+        >
+          <img
+            src= {GTHCImg}
+            alt="Menu do GTHC Um tamanduá de capuz e língua verde"
+            className="w-36 sm:w-40 md:w-40 h-auto scale-90 sm:scale-95 object-contain"
+          ></img>
         </a>
       </div>
     </nav>
