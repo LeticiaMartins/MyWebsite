@@ -53,7 +53,7 @@ const Navbar = () => {
           className="transition-transform duration-300 transform hover:scale-110"
         >
           <img
-            src= {GTHCImg}
+            src={GTHCImg}
             alt="Menu do GTHC Um tamanduá de capuz e língua verde"
             className="w-36 sm:w-40 md:w-40 h-auto scale-90 sm:scale-95 object-contain"
           ></img>

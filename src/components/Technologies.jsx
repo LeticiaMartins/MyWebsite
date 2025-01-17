@@ -1,9 +1,9 @@
 import { RiReactjsLine } from "react-icons/ri";
 import { RiAngularjsFill } from "react-icons/ri";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { SiDotnet } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 import { PiFileCSharpFill } from "react-icons/pi";
-import { SiFramer } from "react-icons/si";
+import { TbFileTypeSql } from "react-icons/tb";
 import { motion } from "motion/react";
 
 const iconVariants = (duration) => ({
@@ -22,11 +22,12 @@ const iconVariants = (duration) => ({
 const Technologies = () => {
   return (
     <div className="border-b border-transparent pb-24">
-      <motion.h2 
-      whileInView={{ opacity: 1, y: 0 }}
-      initial={{ opacity: 0, y: -100 }}
-      transition={{ duration: 1.5 }}
-      className="font-display font-semibold tracking-tighter my-20 text-customBlack text-center text-4xl">
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 1.5 }}
+        className="font-display font-semibold tracking-tighter my-20 text-customBlack text-center text-4xl"
+      >
         Technologies
       </motion.h2>
       <motion.div
@@ -57,7 +58,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-900 p-4"
         >
-          <RiTailwindCssFill className="text-7xl text-customBlack" />
+          <SiDotnet className="text-7xl text-customBlack" />
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
@@ -81,7 +82,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-900 p-4"
         >
-          <SiFramer className="text-7xl text-customBlack" />
+          <TbFileTypeSql className="text-7xl text-customBlack" />
         </motion.div>
       </motion.div>
     </div>

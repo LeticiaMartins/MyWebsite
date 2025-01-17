@@ -1,6 +1,3 @@
-import project1 from "../assets/projects/data.jpg";
-import project2 from "../assets/projects/player.jpg";
-
 export const HERO_CONTENT = `With over 4 years of experience in TypeScript, HTML, and CSS, I specialize in creating responsive and user-friendly web interfaces. I enjoy building scalable, client-focused websites using frameworks like Angular, always striving to deliver efficient and high-performing solutions. I thrive in collaborative environments, where solving bugs, optimizing UI/UX, and ensuring code quality are part of the daily workflow. Passionate about learning, I’m always exploring new technologies to enhance functionality and deliver the best possible experience for users.`;
 
 export const ABOUT_TEXT = `My journey in technology has been shaped by a variety of experiences that allowed me to learn and grow. It began with two exchange programs, where I had the chance to develop my programming, teamwork, and creativity skills while gaining new perspectives.
@@ -14,42 +11,21 @@ export const EXPERIENCES = [
     year: "June/2024 to Present",
     role: "Back-End Software Developer",
     company: "Getronics",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
+    description: `Ensure the smooth operation of online transactions by maintaining system reliability using mainframe technology, which guarantees high availability and low latency. Additionally, contribute to the implementation of new payment features, such as PIX, by leveraging mainframe systems for seamless backend integration.`,
     technologies: ["Mainframe", "COBOL", "Team collaboration"],
   },
   {
     year: "May/2022 to April/2024",
     role: "Full Stack Software Developer",
     company: "Banco ABC Brasil",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
+    description: `Contributed to the development and maintenance of internal systems by resolving bugs and handling feature requests to ensure system stability and performance. Developed user interfaces using Angular, enhancing the usability and functionality of internal tools. Implemented business logic via APIs using .NET and C#, supporting backend operations and ensuring seamless integration with front-end components. Additionally, created and optimized database procedures using SQL Server, improving data handling efficiency and supporting overall system performance.`,
     technologies: ["Angular", ".NET", "C#", "SQL Server", "API Development"],
   },
   {
     year: "March/2019 to December/2019",
     role: "Front-End Developer",
     company: "7Ways",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
+    description: `Performed daily maintenance, layout adjustments, and implementation of the Vtex platform on e-commerce sites, ensuring optimal performance and user experience for clients like Stance and other retailers. Collaborated with cross-functional teams to troubleshoot and resolve issues, ensuring continuous availability and performance of e-commerce platforms. Additionally, implemented responsive design features, enhancing both the functionality and UX of e-commerce websites, while aligning with client branding requirements.`,
     technologies: ["Vtex", "HTML", "CSS", "JavaScript"],
   },
 ];
-
-export const EDUCATION = [
-  {
-    title: "Bachelor of Computer Science",
-    image: project1,
-    description:
-      "Relevant coursework: Science and Technology, Software development, Data Structures and Algorithms, Operating Systems.",
-    technologies: ["Federal University of ABC (UFABC), São Paulo, Brazil"],
-  },
-  {
-    title: "Exchange Student Program",
-    image: project2,
-    description:
-      "Relevant Extracurricular Activities: Track & Field and Robotics",
-    technologies: ["Gilmer County High School, West Virginia, USA"],
-  },
-];
-
-export const CONTACT = {
-  email: "lemartins.flag@gmail.com",
-};

@@ -1,4 +1,3 @@
-import { EDUCATION } from "../constants";
 import { motion } from "motion/react";
 
 const Academics = () => {
@@ -12,42 +11,94 @@ const Academics = () => {
       >
         Academics
       </motion.h2>
-      <div>
-        {EDUCATION.map((project, index) => (
-          <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -100 }}
-              transition={{ duration: 1 }}
-              className="w-full lg:w-1/4"
-            >
-              <img
-                src={project.image}
-                width={150}
-                height={150}
-                alt={project.title}
-                className="mb-6 rounded"
-              />
-            </motion.div>
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: 100 }}
-              transition={{ duration: 1 }}
-              className="w-full max-w-xl lg:w-3/4"
-            >
-              <h6 className="mb-2 font-semibold">{project.title}</h6>
-              <p className="mb-4 text-slate-700">{project.description}</p>
-              {project.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="mr-2 rounded bg-neutral-200 px-2 py-1 text-sm font-medium text-red-800"
-                >
-                  {tech}
-                </span>
-              ))}
-            </motion.div>
-          </div>
-        ))}
+      <div className="flex justify-center">
+        <div className="max-w-4xl w-full">
+          <ol className="relative border-s border-red-800">
+            <li className="mb-10 ms-4">
+              <div className="absolute w-3 h-3 bg-red-800 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+              <time className="mb-1 text-sm font-semibold leading-none text-gray-400">
+                2021 to Present
+              </time>
+              <h3 className="text-lg font-semibold text-customBlack">
+                Bachelor of Computer Science - Federal University of ABC
+                (UFABC), São Paulo, Brazil
+              </h3>
+              <p className="mb-4 text-base font-normal text-gray-500">
+                Science and Technology, Software development, Data Structures
+                and Algorithms, Operating Systems.
+              </p>
+            </li>
+            <li className="mb-10 ms-4">
+              <div className="absolute w-3 h-3 bg-red-800 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+              <time className="mb-1 text-sm font-semibold leading-none text-gray-400">
+                March/2024
+              </time>
+              <h3 className="text-lg font-semibold text-customBlack">
+                AWS Cloud Practitioner Essentials
+              </h3>
+              <p className="mb-4 text-base font-normal text-gray-500">
+                Exam Prep Standard Course: AWS Certified Cloud Practitioner
+                (CLF-C02 - Portuguese (Brazil))
+              </p>
+            </li>
+            <li className="mb-10 ms-4">
+              <div className="absolute w-3 h-3 bg-red-800 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+              <time className="mb-1 text-sm font-semibold leading-none text-gray-400">
+                March/2024
+              </time>
+              <h3 className="text-lg font-semibold text-customBlack">
+                Google Data Analytics Professional Certificate
+              </h3>
+              <p className="mb-4 text-base font-normal text-gray-500">
+                Completed eight courses, developed by Google, consisting of
+                practical activities and designed to prepare students for
+                entry-level roles in data analysis. The courses are proficient
+                in tools and platforms, including spreadsheets, SQL, Tableau,
+                and R. They teach how to prepare, process, analyze, and share
+                data for informed action.
+              </p>
+            </li>
+            <li className="mb-10 ms-4">
+              <div className="absolute w-3 h-3 bg-red-800 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+              <time className="mb-1 text-sm font-semibold leading-none text-gray-400">
+                2022
+              </time>
+              <h3 className="text-lg font-semibold text-customBlack">
+                Introduction to Management 3.0
+              </h3>
+              <p className="mb-4 text-base font-normal text-gray-500">
+                Agile Methodologies · Scrum
+              </p>
+            </li>
+            <li className="mb-10 ms-4">
+              <div className="absolute w-3 h-3 bg-red-800 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+              <time className="mb-1 text-sm font-semibold leading-none text-gray-400">
+                2018
+              </time>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                Web FullStack Course
+              </h3>
+              <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+                In the FullStack Web course I had my first contact with
+                programming, learning about HTML, CSS, JavaScript, MySQL,
+                GitHub, BootStrap and PHP.
+              </p>
+            </li>
+            <li class="ms-4">
+              <div class="absolute w-3 h-3 bg-red-800  rounded-full mt-1.5 -start-1.5 border border-white"></div>
+              <time class="mb-1 text-sm font-semibold leading-none text-gray-400">
+                2017 - 2018
+              </time>
+              <h3 class="text-lg font-semibold text-gray-900">
+                Exchange Student Program - Gilmer County High School, West
+                Virginia, USA
+              </h3>
+              <p class="text-base font-normal text-gray-500">
+                Extracurricular Activities: Track & Field and Robotics
+              </p>
+            </li>
+          </ol>
+        </div>
       </div>
     </div>
   );
