@@ -30,7 +30,7 @@ const Projects = () => {
               description: "",
             },
             {
-              title: "Medium Texts",
+              title: "Medium Stories",
               img: project2,
               link: "https://medium.com/@leticiamartinsbandeira",
               description:
