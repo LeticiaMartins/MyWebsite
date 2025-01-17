@@ -1,41 +1,26 @@
-# MyWebsite  
+# MyWebsite
 
-Bem-vindo ao repositório do **MyWebsite**! 🚀  
+Welcome to **MyWebsite**! This is a personal portfolio website designed to showcase my projects, blog posts, and more. It's built using modern web development technologies and is fully responsive, ensuring a great experience on both desktop and mobile devices.
 
-Este projeto é o meu website pessoal, onde apresento informações sobre minha carreira, projetos, habilidades e interesses.  
+## Features
 
-🔗 **Acesse o site em:** [https://leticiamartins-mywebsite.vercel.app/](https://leticiamartins-mywebsite.vercel.app/)  
+- **Responsive Design**: The website adapts seamlessly across different screen sizes, from mobile to desktop.
+- **Portfolio Showcase**: Displays various projects, such as articles, case studies, and future developments.
+- **Interactive Design**: Smooth transitions and animations are used throughout the site.
+- **Links to My Medium**: Direct access to my [Medium articles](https://medium.com/@leticiamartinsbandeira) for more detailed writings on tech, data science, and more.
 
-## 🚀 Tecnologias Utilizadas  
+## Technologies Used
 
-- **React**: Biblioteca para a construção da interface do usuário.  
-- **Tailwind CSS**: Framework para estilização rápida e responsiva.  
-- **Framer Motion**: Para animações fluidas e interativas.  
-- **Vite**: Ferramenta de build rápida e moderna para desenvolvimento frontend.  
+- **React**: JavaScript library for building user interfaces.
+- **Tailwind CSS**: Utility-first CSS framework for creating custom designs.
+- **Vercel**: Cloud platform for deploying and hosting websites.
+- **Motion**: Library for adding animations and transitions in React apps.
+- **JavaScript**: Programming language for web development.
+- **HTML5**: Markup language for structuring content on the web.
+- **CSS3**: Style sheet language for designing the website.
 
-## 📂 Estrutura do Projeto  
+## Deploying
 
-- `src/`  
-  - `components/`: Componentes reutilizáveis do site.  
-  - `pages/`: Páginas principais do site.  
-  - `assets/`: Imagens e outros arquivos estáticos.  
-  - `styles/`: Arquivos de estilização global.  
-- `public/`: Arquivos públicos como o favicon e manifest.json.  
+This website is deployed on **Vercel**. Changes made to the repository will automatically trigger a new deployment. You can view the live website at:
 
-## ✨ Recursos Principais  
-
-- **Página inicial**: Apresenta informações gerais e uma introdução pessoal.  
-- **Projetos**: Seção com uma vitrine dos meus principais projetos, incluindo descrição e links.  
-- **Contato**: Formulário para facilitar a comunicação comigo.  
-
-## 🌟 Contribuições  
-
-Contribuições são sempre bem-vindas! Se você encontrar algum problema ou tiver sugestões de melhorias, fique à vontade para abrir uma [issue](https://github.com/LeticiaMartins/MyWebsite/issues) ou enviar um pull request.  
-
-## 📜 Licença  
-
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais informações.  
-
----  
-
-Desenvolvido por **Leticia Martins**.  
+[https://leticiamartins-mywebsite.vercel.app](https://leticiamartins-mywebsite.vercel.app)
