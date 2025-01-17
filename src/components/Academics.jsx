@@ -1,7 +1,7 @@
-import { PROJECTS } from "../constants";
+import { EDUCATION } from "../constants";
 import { motion } from "motion/react";
 
-const Projects = () => {
+const Academics = () => {
   return (
     <div className="border-b border-transparent pb-4 text-customBlack">
       <motion.h2
@@ -10,10 +10,10 @@ const Projects = () => {
         transition={{ duration: 0.5 }}
         className="my-20 text-center text-4xl font-display text-customBlack font-semibold tracking-tighter"
       >
-        Projects
+        Academics
       </motion.h2>
       <div>
-        {PROJECTS.map((project, index) => (
+        {EDUCATION.map((project, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
@@ -53,4 +53,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Academics;

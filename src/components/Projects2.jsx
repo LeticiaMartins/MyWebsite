@@ -1,5 +1,6 @@
 import project1 from "../assets/projects/data.jpg";
 import project2 from "../assets/projects/medium.png";
+import project3 from "../assets/projects/spotify.jpg";
 import { motion } from "framer-motion";
 
 const Projects2 = () => {
@@ -22,52 +23,64 @@ const Projects2 = () => {
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
           {[
             {
-              title: "Google Data Analytics Professional Certificate Divvy Case Study",
+              title:
+                "Google Data Analytics Professional Certificate Divvy Case Study",
               img: project1,
-              description:
-                "",
+              link: "https://medium.com/@leticiamartinsbandeira/google-data-analytics-professional-certificate-divvy-case-study-21b67d11c2b6",
+              description: "",
             },
             {
               title: "Medium Texts",
               img: project2,
+              link: "https://medium.com/@leticiamartinsbandeira",
               description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.",
+                "Explore articles on tech, programming, and data science, crafted to inspire and inform.",
             },
             {
-              title: "Shooting Star",
-              img: "https://images.unsplash.com/photo-1502675135487-e971002a6adb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
+              title: "Music Player",
+              img: project3,
+              link: "",
               description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.",
+                `Currently under development.
+
+                Stay tuned for updates!`
             },
           ].map((project, index) => (
-            <motion.div
+            <a
               key={index}
-              variants={projectVariants}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: index * 0.3 }}
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
             >
-              <div className="h-96 w-72">
-                <img
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                  src={project.img}
-                  alt={project.title}
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <h1 className="font-display text-2xl font-semibold text-white">
-                  {project.title}
-                </h1>
-                <p className="font-body mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  {project.description}
-                </p>
-                <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-body text-sm capitalize text-white shadow shadow-black/60">
-                  See More
-                </button>
-              </div>
-            </motion.div>
+              <motion.div
+                key={index}
+                variants={projectVariants}
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 1, delay: index * 0.3 }}
+              >
+                <div className="h-96 w-72">
+                  <img
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                    src={project.img}
+                    alt={project.title}
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                  <h1 className="font-display text-2xl font-semibold text-white">
+                    {project.title}
+                  </h1>
+                  <p className="font-body mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 whitespace-pre-line">
+                    {project.description}
+                  </p>
+                  <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-body text-sm capitalize text-white shadow shadow-black/60">
+                    See More
+                  </button>
+                </div>
+              </motion.div>
+            </a>
           ))}
         </div>
       </div>
