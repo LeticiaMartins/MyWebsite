@@ -19,7 +19,7 @@ const Projects = () => {
       >
         Projects
       </motion.h2>
-      <div className="mb-8 flex flex-wrap lg:justify-center">
+      <div className="mb-8 flex flex-wrap justify-center w-full max-w-full">
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
           {[
             {
