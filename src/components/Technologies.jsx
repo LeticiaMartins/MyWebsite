@@ -1,8 +1,7 @@
 import { RiReactjsLine } from "react-icons/ri";
 import { RiAngularjsFill } from "react-icons/ri";
-import { SiDotnet } from "react-icons/si";
+import { SiGo, SiGooglecloud } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
-import { PiFileCSharpFill } from "react-icons/pi";
 import { FaSquareJs  } from "react-icons/fa6";
 import { motion } from "motion/react";
 
@@ -58,7 +57,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-900 p-4"
         >
-          <SiDotnet className="text-7xl text-customBlack" />
+          <SiGo className="text-7xl text-customBlack" />
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
@@ -74,7 +73,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-900 p-4"
         >
-          <PiFileCSharpFill className="text-7xl text-customBlack" />
+          <SiGooglecloud className="text-7xl text-customBlack" />
         </motion.div>
         <motion.div
           variants={iconVariants(4)}

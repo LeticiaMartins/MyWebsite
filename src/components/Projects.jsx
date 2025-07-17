@@ -1,6 +1,6 @@
 import project1 from "../assets/projects/data.jpg";
 import project2 from "../assets/projects/medium.png";
-import project3 from "../assets/projects/spotify.jpg";
+import project3 from "../assets/projects/klondike.jpg";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -37,12 +37,10 @@ const Projects = () => {
                 "Explore articles on tech, programming, and data science, crafted to inspire and inform.",
             },
             {
-              title: "Music Player",
+              title: "Klondike-Inspired Game",
               img: project3,
               link: "",
-              description: `Currently under development.
-
-                Stay tuned for updates!`,
+              description: "A casual web game inspired by Klondike-style ads. Currently under development.",
             },
           ].map((project, index) => (
             <a

@@ -1,14 +1,23 @@
-export const HERO_CONTENT = `With over 4 years of experience in TypeScript, HTML, and CSS, I specialize in creating responsive and user-friendly web interfaces. I enjoy building scalable, client-focused websites using frameworks like Angular, always striving to deliver efficient and high-performing solutions. I thrive in collaborative environments, where solving bugs, optimizing UI/UX, and ensuring code quality are part of the daily workflow. Passionate about learning, I’m always exploring new technologies to enhance functionality and deliver the best possible experience for users.`;
+export const HERO_CONTENT = ` With over 4 years of experience in TypeScript, HTML, and CSS, I specialize in building responsive, secure, and user-friendly web applications. I enjoy building scalable solutions using frameworks like React.js and Angular, while also contributing to robust back-end systems with Go (Golang) and C#. I thrive in collaborative environments, where improving UI/UX, resolving bugs, and maintaining high code quality are part of my everyday routine. Passionate about learning, I’m always exploring new technologies to enhance functionality and deliver the best possible experience for users.`;
 
 export const ABOUT_TEXT = `My journey in technology has been shaped by a variety of experiences that allowed me to learn and grow. It began with two exchange programs, where I had the chance to develop my programming, teamwork, and creativity skills while gaining new perspectives.
+
+Continuing my career journey, I am now a Full Stack Developer at Keystle, a company specializing in information security. In this role, I apply and expand my skills by developing both the back-end, with APIs in Go (Golang), and the front-end, with interfaces in React.js, to build modern authentication products like MFA and passwordless login.
 
 Currently, I'm a student of Science and Technology and Computer Science at the Federal University of ABC, where I'm continually learning new tools, languages, and concepts. Alongside my studies, I've been part of the Green Team Hacker Club, an ethical hacking group at UFABC. Serving in roles like Vice-President and President taught me the value of collaboration and leadership in a team environment.
 
 My goal is to combine my practical experience with a solid academic background to tackle complex challenges in the technology field. I am constantly seeking opportunities to grow professionally and apply my knowledge to innovative projects.`;
 
 export const EXPERIENCES = [
+    {
+    year: "Fev/2025 to Present",
+    role: "Full Stack Developer",
+    company: "Keystle",
+    description: `Responsible for full-stack development of the company's security and identity management platform, building robust solutions using Go for back-end microservices and RESTful APIs, and React.js for responsive front-end interfaces. My work includes implementing key features like MFA, SSO, and passwordless login, managing secure SQL databases, and contributing to code quality and performance through agile collaboration and technical leadership.`,
+    technologies: ["Go (Programming Language)", "React", "Identity and Access Management (IAM)"],
+  },
   {
-    year: "June/2024 to Present",
+    year: "June/2024 to Fev/2025",
     role: "Back-End Software Developer",
     company: "Getronics",
     description: `Ensure the smooth operation of online transactions by maintaining system reliability using mainframe technology, which guarantees high availability and low latency. Additionally, contribute to the implementation of new payment features, such as PIX, by leveraging mainframe systems for seamless backend integration.`,
