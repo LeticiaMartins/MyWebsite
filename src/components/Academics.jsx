@@ -88,7 +88,7 @@ const Academics = () => {
               <time className="mb-1 text-sm font-semibold leading-none text-gray-400">
                 2018
               </time>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="text-lg font-semibold text-customBlack">
                 Web FullStack Course
               </h3>
               <p className="text-base font-normal text-gray-500 dark:text-gray-400">

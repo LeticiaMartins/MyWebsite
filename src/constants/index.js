@@ -2,15 +2,22 @@ export const HERO_CONTENT = ` With over 4 years of experience in TypeScript, HTM
 
 export const ABOUT_TEXT = `My journey in technology has been shaped by a variety of experiences that allowed me to learn and grow. It began with two exchange programs, where I had the chance to develop my programming, teamwork, and creativity skills while gaining new perspectives.
 
-Continuing my career journey, I am now a Full Stack Developer at Keystle, a company specializing in information security. In this role, I apply and expand my skills by developing both the back-end, with APIs in Go (Golang), and the front-end, with interfaces in React.js, to build modern authentication products like MFA and passwordless login.
+Continuing my professional journey, I currently work as a Software Developer at Stone, focusing on backend for payments products. In this role, I apply and expand my skills in developing scalable services and APIs using Go (Golang) and .NET C#, contributing to the evolution of essential solutions in the Brazilian payments landscape.
 
 Currently, I'm a student of Science and Technology and Computer Science at the Federal University of ABC, where I'm continually learning new tools, languages, and concepts. Alongside my studies, I've been part of the Green Team Hacker Club, an ethical hacking group at UFABC. Serving in roles like Vice-President and President taught me the value of collaboration and leadership in a team environment.
 
 My goal is to combine my practical experience with a solid academic background to tackle complex challenges in the technology field. I am constantly seeking opportunities to grow professionally and apply my knowledge to innovative projects.`;
 
 export const EXPERIENCES = [
+  {
+    year: "Sep/2025 to Present",
+    role: "Back-End Software Engineer",
+    company: "Stone",
+    description: `Develop and maintain high-performance payments APIs and microservices using Go (Golang). My role involves designing scalable backend solutions and optimizing business-critical applications to ensure they run reliably. I work closely with cross-functional teams in an agile environment to ship new features and improvements, always focusing on code quality through consistent unit and integration testing.`,
+    technologies: ["Go (Programming Language)", "API Development"],
+  },
     {
-    year: "Fev/2025 to Present",
+    year: "Fev/2025 to Jul/2025",
     role: "Full Stack Developer",
     company: "Keystle",
     description: `Responsible for full-stack development of the company's security and identity management platform, building robust solutions using Go for back-end microservices and RESTful APIs, and React.js for responsive front-end interfaces. My work includes implementing key features like MFA, SSO, and passwordless login, managing secure SQL databases, and contributing to code quality and performance through agile collaboration and technical leadership.`,
