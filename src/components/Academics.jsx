@@ -91,7 +91,7 @@ const Academics = () => {
               <h3 className="text-lg font-semibold text-customBlack">
                 Web FullStack Course
               </h3>
-              <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+              <p className="mb-4 text-base font-normal text-gray-500">
                 In the FullStack Web course I had my first contact with
                 programming, learning about HTML, CSS, JavaScript, MySQL,
                 GitHub, BootStrap and PHP.
@@ -102,11 +102,11 @@ const Academics = () => {
               <time class="mb-1 text-sm font-semibold leading-none text-gray-400">
                 2017 - 2018
               </time>
-              <h3 class="text-lg font-semibold text-gray-900">
+              <h3 class="text-lg font-semibold text-customBlack">
                 Exchange Student Program - Gilmer County High School, West
                 Virginia, USA
               </h3>
-              <p class="text-base font-normal text-gray-500">
+              <p class="mb-4 text-base font-normal text-gray-500">
                 Extracurricular Activities: Track & Field and Robotics
               </p>
             </li>
