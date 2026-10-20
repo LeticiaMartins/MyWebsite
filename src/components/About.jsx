@@ -1,42 +1,26 @@
 import aboutImg from "../assets/about.jpg";
-import { ABOUT_TEXT } from "../constants";
-import { motion } from "motion/react";
+import Reveal, { Titulo } from "./Reveal";
+import { useLang } from "../i18n/LangContext";
 
 const About = () => {
+  const { t } = useLang();
+
   return (
-    <div className="border-b border-transparent pb-4">
-      <h2 className="font-display text-customBlack font-semibold tracking-tighter my-20 text-center text-4xl">
-        About Me <span className="text-neutral-500"> </span>
-      </h2>
-      <div className="flex flex-wrap">
-        <motion.div
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.5 }}
-          className="w-full lg:w-1/2 lg:p-8"
-        >
-          <div className="flex items-center justify-center">
-            <img
-              className="rounded-2xl w-3/4 md:w-3/4 lg:w-2/3"
-              src={aboutImg}
-              alt="about"
-            />
-          </div>
-        </motion.div>
-        <motion.div
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.5 }}
-          className="w-full lg:w-1/2"
-        >
-          <div className="flex justify-center lg:justify-start">
-            <p className="font-body text-slate-700 text-lg my-2 max-w-xl py-6 whitespace-pre-line">
-              {ABOUT_TEXT}
-            </p>
-          </div>
-        </motion.div>
+    <section id="about" className="py-16 lg:py-24">
+      <Titulo>
+        {t.about.title}
+      </Titulo>
+      <div className="flex flex-col items-center gap-10 lg:flex-row lg:items-start lg:gap-16">
+        <Reveal x={-100} className="w-3/4 max-w-sm lg:w-5/12">
+          <img className="w-full rounded-2xl shadow-2xl shadow-black/25" src={aboutImg} alt={t.about.imageAlt} />
+        </Reveal>
+        <Reveal x={100} className="max-w-xl space-y-5 text-lg leading-relaxed text-muted lg:w-7/12">
+          {t.about.paragraphs.map((p) => (
+            <p key={p.slice(0, 24)}>{p}</p>
+          ))}
+        </Reveal>
       </div>
-    </div>
+    </section>
   );
 };
 

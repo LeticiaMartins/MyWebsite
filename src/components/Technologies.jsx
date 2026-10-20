@@ -1,90 +1,53 @@
-import { RiReactjsLine } from "react-icons/ri";
-import { RiAngularjsFill } from "react-icons/ri";
-import { SiGo, SiGooglecloud } from "react-icons/si";
+import { RiReactjsLine, RiAngularjsFill } from "react-icons/ri";
+import { SiGo, SiGooglecloud, SiNextdotjs, SiPostgresql } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
-import { FaSquareJs  } from "react-icons/fa6";
+import { FaSquareJs } from "react-icons/fa6";
 import { motion } from "motion/react";
+import Reveal, { Titulo } from "./Reveal";
+import { useLang } from "../i18n/LangContext";
 
-const iconVariants = (duration) => ({
-  initial: { y: -10 },
+const flutuar = (duration) => ({
+  initial: { y: -8 },
   animate: {
-    y: [10, -10],
-    transition: {
-      duration: duration,
-      ease: "linear",
-      repeat: Infinity,
-      repeatType: "reverse",
-    },
+    y: [8, -8],
+    transition: { duration, ease: "linear", repeat: Infinity, repeatType: "reverse" },
   },
 });
 
+const icones = [
+  { Icon: SiGo, nome: "Go", d: 5 },
+  { Icon: FaAws, nome: "AWS", d: 2 },
+  { Icon: RiReactjsLine, nome: "React", d: 2.5 },
+  { Icon: SiNextdotjs, nome: "Next.js", d: 3.5 },
+  { Icon: SiPostgresql, nome: "PostgreSQL", d: 4.5 },
+  { Icon: RiAngularjsFill, nome: "Angular", d: 3 },
+  { Icon: SiGooglecloud, nome: "Google Cloud", d: 6 },
+  { Icon: FaSquareJs, nome: "JavaScript", d: 4 },
+];
+
 const Technologies = () => {
+  const { t } = useLang();
+
   return (
-    <div className="border-b border-transparent pb-24">
-      <motion.h2
-        whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 1.5 }}
-        className="font-display font-semibold tracking-tighter my-20 text-customBlack text-center text-4xl"
-      >
-        Technologies
-      </motion.h2>
-      <motion.div
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
-        transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center gap-4"
-      >
-        <motion.div
-          variants={iconVariants(2.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <RiReactjsLine className="text-7xl text-customBlack" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(3)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-900 p-4"
-        >
-          <RiAngularjsFill className="text-7xl text-customBlack" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-900 p-4"
-        >
-          <SiGo className="text-7xl text-customBlack" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-900 p-4"
-        >
-          <FaAws className="text-7xl text-customBlack" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(6)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-900 p-4"
-        >
-          <SiGooglecloud className="text-7xl text-customBlack" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-900 p-4"
-        >
-          <FaSquareJs  className="text-7xl text-customBlack" />
-        </motion.div>
-      </motion.div>
-    </div>
+    <section className="py-16 lg:py-24">
+      <Titulo duration={1.5}>
+        {t.technologies.title}
+      </Titulo>
+      <Reveal x={-100} duration={1.5} className="flex flex-wrap items-center justify-center gap-4">
+        {icones.map(({ Icon, nome, d }) => (
+          <motion.div
+            key={nome}
+            variants={flutuar(d)}
+            initial="initial"
+            animate="animate"
+            title={nome}
+            className="surface rounded-2xl p-4"
+          >
+            <Icon className="text-6xl text-ink" aria-label={nome} />
+          </motion.div>
+        ))}
+      </Reveal>
+    </section>
   );
 };
 

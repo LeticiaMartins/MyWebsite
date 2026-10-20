@@ -1,54 +1,38 @@
-import { EXPERIENCES } from "../constants";
-import { motion } from "motion/react";
+import Reveal, { Titulo } from "./Reveal";
+import { useLang } from "../i18n/LangContext";
 
 const Experience = () => {
+  const { t } = useLang();
+
   return (
-    <div className="border-b border-transparent pb-4">
-      <motion.h2
-        whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 0.5 }}
-        className="my-20 text-center text-4xl font-display text-customBlack font-semibold tracking-tighter"
-      >
-        Experience
-      </motion.h2>
-      <div>
-        {EXPERIENCES.map((experience, index) => (
-          <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -100 }}
-              transition={{ duration: 1 }}
-              className="w-full lg:w-1/4"
-            >
-              <p className="mb-2 text-sm text-gray-500 text-sm font-semibold leading-none">{experience.year}</p>
-            </motion.div>
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: 100 }}
-              transition={{ duration: 1 }}
-              className="w-full max-w-xl lg:w-3/4"
-            >
-              <h6 className="mb-2 font-semibold text-customBlack">
-                {experience.role} -{" "}
-                <span className="text-sm text-red-800">
-                  {experience.company}
-                </span>
-              </h6>
-              <p className="mb-4 text-slate-700">{experience.description}</p>
-              {experience.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="mr-2 mt-4 rounded bg-neutral-200 px-2 py-1 text-sm font-medium text-red-800"
-                >
-                  {tech}
-                </span>
-              ))}
-            </motion.div>
+    <section id="experience" className="py-16 lg:py-24">
+      <Titulo>
+        {t.experience.title}
+      </Titulo>
+      <div className="mx-auto max-w-4xl space-y-10">
+        {t.experience.items.map((exp) => (
+          <div key={exp.company} className="flex flex-col gap-2 lg:flex-row lg:gap-10">
+            <Reveal as="p" x={-100} duration={1} className="text-sm font-semibold text-muted/80 lg:w-1/4 lg:pt-1">
+              {exp.year}
+            </Reveal>
+            <Reveal x={100} duration={1} className="lg:w-3/4">
+              <h3 className="font-semibold text-ink">
+                {exp.role} <span className="text-muted/60">·</span>{" "}
+                <span className="text-accent">{exp.company}</span>
+              </h3>
+              <p className="mt-2 leading-relaxed text-muted">{exp.description}</p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {exp.technologies.map((tech) => (
+                  <span key={tech} className="chip rounded-md px-2.5 py-1 text-xs font-medium">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </Reveal>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

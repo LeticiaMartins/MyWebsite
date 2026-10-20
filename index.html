@@ -4,7 +4,25 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="src/constants/icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyWebsite</title>
+    <title>Leticia Martins · Software Engineer</title>
+    <meta
+      name="description"
+      content="Back-end software engineer working on payments with Go. Computer Science at UFABC, AWS Student Builder Group UFABC core team, creator of Joga o Buquê."
+    />
+    <meta property="og:title" content="Leticia Martins · Software Engineer" />
+    <meta property="og:description" content="Back-end, payments, cloud and community." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#121317" />
+    <script>
+      // Tema claro (a) ou escuro (b): escolha salva, ?tema= ou preferência do sistema. Roda antes do React para não piscar.
+      (function () {
+        var q = new URLSearchParams(location.search).get("tema"), s = null;
+        try { s = localStorage.getItem("tema"); } catch (e) {}
+        var t = q === "claro" || q === "escuro" ? q : s === "claro" || s === "escuro" ? s
+          : matchMedia("(prefers-color-scheme: light)").matches ? "claro" : "escuro";
+        document.documentElement.dataset.fundo = t === "claro" ? "a" : "b";
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
