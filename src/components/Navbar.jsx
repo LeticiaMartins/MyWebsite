@@ -7,7 +7,7 @@ const secoes = ["about", "experience", "projects", "community", "contact"];
 
 const aplicarTema = (escuro) => {
   document.documentElement.dataset.fundo = escuro ? "b" : "a";
-  document.querySelector('meta[name="theme-color"]')?.setAttribute("content", escuro ? "#121317" : "#faf6f1");
+  document.querySelector('meta[name="theme-color"]')?.setAttribute("content", escuro ? "#181512" : "#faf6f1");
   try {
     localStorage.setItem("tema", escuro ? "escuro" : "claro");
   } catch {
