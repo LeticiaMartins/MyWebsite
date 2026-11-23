@@ -2,6 +2,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import imgJoga from "../assets/projects/joga.jpg";
 import imgTechRack from "../assets/projects/techrack.jpg";
 import imgMillanea from "../assets/projects/millanea.jpg";
+import imgOrnella from "../assets/projects/ornella.jpg";
 import imgDivvy from "../assets/projects/data.jpg";
 import imgMedium from "../assets/projects/medium.png";
 import imgKlondike from "../assets/projects/klondike.jpg";
@@ -12,6 +13,12 @@ const destaques = {
   personal: [
     { key: "joga", img: imgJoga, link: "https://jogaobuque.com.br", host: "jogaobuque.com.br" },
     { key: "techrack", img: imgTechRack, link: "https://tecnoachados.vercel.app", host: "tecnoachados.vercel.app" },
+    {
+      key: "ornella",
+      img: imgOrnella,
+      link: "https://www.figma.com/proto/mRDkxZaHkXcNW3tc1GOU1U?node-id=1-2&starting-point-node-id=1%3A2",
+      host: "figma.com",
+    },
   ],
   freelance: [{ key: "millanea", img: imgMillanea, link: "https://millanea-site.vercel.app", host: "millanea-site.vercel.app" }],
 };
@@ -65,7 +72,7 @@ const CardDestaque = ({ p, item, visit, largo, i = 0 }) => (
           ))}
         </div>
         <span className="mt-auto inline-flex items-center gap-1 pt-6 text-sm font-semibold text-accent">
-          {visit} <span className="font-normal text-muted/80">· {p.host}</span>
+          {item.cta ?? visit} <span className="font-normal text-muted/80">· {p.host}</span>
           <FiArrowUpRight className="transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
         </span>
       </div>

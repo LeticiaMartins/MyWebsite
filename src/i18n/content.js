@@ -117,6 +117,14 @@ const en = {
           "An independent tech review site in Portuguese and English, with buying guides for audio, wearables, peripherals, smart home and games. A personal project built from the ground up.",
         tags: ["Content site", "SEO", "i18n"],
       },
+      ornella: {
+        title: "Ornella's News",
+        year: "2026",
+        description:
+          "Built for a friend with a private X account: every post she publishes lands in a WhatsApp group on its own, sent from her number. It runs on the X API with OAuth, Baileys and Node.js on AWS, with a party themed panel she sets up from her phone in three steps.",
+        tags: ["Node.js", "X API", "WhatsApp", "AWS"],
+        cta: "View prototype",
+      },
       millanea: {
         title: "Millanea",
         year: "2026",
@@ -332,6 +340,14 @@ const pt = {
         description:
           "Site independente de análises de tecnologia em português e inglês, com guias de compra de áudio, wearables, periféricos, casa inteligente e games. Um projeto pessoal construído desde o início.",
         tags: ["Site de conteúdo", "SEO", "i18n"],
+      },
+      ornella: {
+        title: "Ornella's News",
+        year: "2026",
+        description:
+          "Feito para uma amiga com conta privada no X: cada post dela chega sozinho a um grupo do WhatsApp, enviado do próprio número. Funciona com a X API via OAuth, Baileys e Node.js na AWS, e tem um painel festivo que ela configura pelo celular em três passos.",
+        tags: ["Node.js", "X API", "WhatsApp", "AWS"],
+        cta: "Ver protótipo",
       },
       millanea: {
         title: "Millanea",
