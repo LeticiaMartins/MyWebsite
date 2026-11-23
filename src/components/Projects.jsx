@@ -16,7 +16,7 @@ const destaques = {
     {
       key: "ornella",
       img: imgOrnella,
-      link: "https://www.figma.com/proto/mRDkxZaHkXcNW3tc1GOU1U?node-id=1-2&starting-point-node-id=1%3A2",
+      link: "https://www.figma.com/proto/mRDkxZaHkXcNW3tc1GOU1U/Ornella-s-News-%C2%B7-Prot%C3%B3tipo?node-id=1-2&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1",
       host: "figma.com",
     },
   ],
