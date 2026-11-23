@@ -12,13 +12,13 @@ import { useLang } from "../i18n/LangContext";
 const destaques = {
   personal: [
     { key: "joga", img: imgJoga, link: "https://jogaobuque.com.br", host: "jogaobuque.com.br" },
-    { key: "techrack", img: imgTechRack, link: "https://tecnoachados.vercel.app", host: "tecnoachados.vercel.app" },
     {
       key: "ornella",
       img: imgOrnella,
       link: "https://www.figma.com/proto/mRDkxZaHkXcNW3tc1GOU1U/Ornella-s-News-%C2%B7-Prot%C3%B3tipo?node-id=1-2&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1",
       host: "figma.com",
     },
+    { key: "techrack", img: imgTechRack, link: "https://tecnoachados.vercel.app", host: "tecnoachados.vercel.app" },
   ],
   freelance: [{ key: "millanea", img: imgMillanea, link: "https://millanea-site.vercel.app", host: "millanea-site.vercel.app" }],
 };
